@@ -16,6 +16,8 @@ body{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     background-color: #1F271B;
     height: 100vh;
+    width: 100%;
+    padding: 2rem;
 }
 
 .carousel {
@@ -257,11 +259,36 @@ body{
     justify-content: center;
     align-items: center;
     transition: all 1s ease-in-out;
+    transform: translateX(0);
+
 }
 
-.active 
+
+#prevButton, #nextButton
 {
-    z-index: 150;
+    /* padding:1rem; */
+    font-size: 3rem;
+    z-index: 400;
+    background-color: rgba(100,100,100,0.5);
+    width:80px;
+    height:80px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    aspect-ratio: 1/1;
+    text-decoration: none;
+
+    transition: all 300ms ease-in;
+    transform: scale(100%);
+
+    /* margin-inline: 1.5rem; */
+}
+
+#prevButton:hover, #prevButton:active, #nextButton:hover, #nextButton:active
+{
+    transform: scale(115%);
 }
 
 .share_icons {

@@ -254,7 +254,6 @@ function updateCards() {
 }
 
 
-
 window.addEventListener("resize", updateCards);
 
 
